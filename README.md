@@ -1,4 +1,4 @@
-![슬라이드16](https://github.com/user-attachments/assets/c5e1a9f5-208e-427a-8f44-160ede7d4d65)# Team Unknown 프로젝트 (팔닭, 8DAK)
+# Team Unknown 프로젝트 (팔닭, 8DAK)
 
 ---
 
@@ -60,7 +60,7 @@
 | ![이미지11](https://github.com/user-attachments/assets/1aad1912-b602-473b-afd8-2151f133640d) | ![이미지12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d) |
 | ![이미지13](https://github.com/user-attachments/assets/b55e1b53-aa10-4689-a3b5-8e10ccb6fb06) | ![이미지14](https://github.com/user-attachments/assets/7221ceeb-75e1-4624-a677-89e0efee38fa) |
 | ![이미지15](https://github.com/user-attachments/assets/6624219e-af21-4de2-9ca7-923735a40a31) |![슬라이드16](https://github.com/user-attachments/assets/a2ba3895-779a-4e58-b051-1734b98abe60)|
-) |
+</div>
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/f5a74a24-1a7f-42f8-a5a8-10f49b908657" alt="이미지17" width="1000" height="600"><br>
@@ -68,6 +68,7 @@
 <img src="https://github.com/user-attachments/assets/8ff7cf9c-6154-400b-b39d-fe1a8c6e50e1" alt="이미지19" width="1000" height="600">
 </div>
 
+<div align="center">
 |![이미지20](https://github.com/user-attachments/assets/80cb62de-9190-41fb-8e33-83e34311f67c) |![이미지21](https://github.com/user-attachments/assets/286612ee-f33f-4272-acb2-9778a1b18e27) | 
 |![이미지22](https://github.com/user-attachments/assets/dd23b104-994b-4d09-93e7-9cd007269f94) |![이미지23](https://github.com/user-attachments/assets/efb5a059-4f71-4b05-a52e-69758a3ed7bf) |
 |![이미지24](https://github.com/user-attachments/assets/0daa22be-bbad-4aff-8bfd-95bd70d23fd6) |![이미지25](https://github.com/user-attachments/assets/60626690-9843-4d46-b698-fd914cbc262d) | 
