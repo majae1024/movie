@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '돋움';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+    overflow-y: scroll;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+}
+
+.body-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+/* 헤더 */
+#header-wrap {
+    position: absolute;
+    left: 0;
+    right: inherit;
+    width: 100%;
+    min-width: 1100px;
+    z-index: 100;
+    background-color: black;
+    height: 150px;
+    border-bottom: 1px solid white;
+}
+
+#header {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#util-left-area {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 160px;
+    margin-top: 10px;
+}
+
+#left-link>a {
+    font-size: 12px;
+    color: #888;
+    padding: 0 10px 0 10px;
+}
+
+#left-link>a:hover {
+    border-bottom: 1px solid #888;
+}
+
+#util-right-area {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    right: 160px;
+    top: 0;
+    margin-top: 10px;
+}
+
+#right-link>a {
+    font-size: 12px;
+    color: #888;
+    padding: 0 10px 0 10px;
+}
+
+#right-link>a:hover {
+    border-bottom: 1px solid #888;
+}
+
+#logo {
+    width: 280px;
+    height: 130px;
+    padding-top: 19px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo>a>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#link-area:before {
+    content: '';
+    display: table;
+}
+
+#link-area {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#link-area a.btn-layer-sitemap {
+    left: 0;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png);
+}
+
+#link-area a.btn-layer-search {
+    left: 40px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png);
+}
+
+#link-area a.link-ticket {
+    right: 40px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png);
+}
+
+#link-area a.btn-layer-mymega {
+    right: 0;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png);
+}
+
+#link-area>a {
+    display: block;
+    position: absolute;
+    top: -45px;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    line-height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#link-area>a:visited {
+    color: #666;
+    text-decoration: none;
+    outline: 1px dotted #000;
+}
+
+#link-area:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+#gnb {
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: -13px;
+}
+
+#gnb ul:after,
+#gnb ul:before {
+    content: '';
+    display: table;
+}
+
+#gnb>ul {
+    position: relative;
+    width: 1100px;
+    margin: 90px auto 0 auto;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+#gnb>ul>li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+#gnb>ul>li>a {
+    color: #fff;
+}
+
+#gnb ul li a {
+    display: block;
+}
+
+a:visited {
+    text-decoration: none;
+    outline: 1px dotted #000;
+}
+
+a {
+    background-color: transparent;
+}
+
+#gnb>ul>li>a {
+    position: absolute;
+    top: -38px;
+    height: 38px;
+    text-indent: -9999px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+#gnb>ul>li>a.gnb-txt-movie {
+    width: 30px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-movie-white.png);
+}
+
+#gnb>ul>li:nth-child(1)>a {
+    left: 166px;
+}
+
+#gnb>ul>li>a.gnb-txt-reserve {
+    width: 30px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-reserve-white.png);
+}
+
+#gnb>ul>li:nth-child(2)>a {
+    left: 256px;
+}
+
+#gnb>ul>li>a.gnb-txt-theater {
+    width: 31px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-theater-white.png);
+}
+
+#gnb>ul>li:nth-child(3)>a {
+    left: 345px;
+}
+
+
+#gnb>ul>li>a.gnb-txt-event {
+    width: 45px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-event-white.png);
+}
+
+#gnb>ul>li:nth-child(4)>a {
+    right: 350px;
+}
+
+
+#gnb>ul>li>a.gnb-txt-store {
+    width: 44px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-store-white.png);
+}
+
+#gnb>ul>li:nth-child(5)>a {
+    right: 245px;
+}
+
+
+#gnb>ul>li>a.gnb-txt-benefit {
+    width: 29px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-benefit-white.png);
+}
+
+#gnb>ul>li:nth-child(6)>a {
+    right: 155px;
+}
+
+
+
+
+
+/* 섹션 */
+#main-section {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 92.5%;
+    min-height: 880px;
+    padding: 0 0 80px 0;
+}
+
+#bg {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#bg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(85, 63, 5, 1) 0%, rgba(23, 17, 1, 0) 50%, rgba(85, 63, 5, 1) 100%);
+}
+
+#bg>img {
+    display: block;
+    width: 100%;
+    filter: blur(15px);
+}
+
+#bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(3, 1, 21, 0.7);
+}
+
+#cont-area {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    padding-top: 80px;
+}
+
+#tab-sorting {
+    margin: 169px 0 20px 0;
+    text-align: center;
+}
+
+#tab-sorting button.on {
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+}
+
+#tab-sorting button {
+    position: relative;
+    display: inline-block;
+    margin: 0 18px;
+    padding: 0 0 5px 0;
+    vertical-align: top;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.0667em;
+}
+
+button {
+    cursor: pointer;
+    letter-spacing: -.5px;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+}
+
+.more-movie {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 257px;
+    color: #aaa;
+    line-height: 16px;
+}
+
+a:visited {
+    text-decoration: none;
+    outline: 1px dotted #000;
+}
+
+a {
+    background-color: transparent;
+}
+
+.list {
+    display: flex;
+}
+
+.poster {
+    width: 245px;
+    height: 400px;
+    margin-right: 40px;
+}
+
+.box1 {
+    width: 100%;
+    height: 352px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-style: italic;
+}
+
+.rank {
+    width: 230px;
+    height: 150px;
+    position: absolute;
+    padding: 10px 0 0 15px;
+    z-index: 2;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.box1 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.box1 > img:hover {
+    opacity: 1;
+    color: #000;
+}
+
+.btn-util {
+    width: 100%;
+    height: 36px;
+    position: relative;
+    float: left;
+    display: flex;
+    margin-top: 10px;
+}
+
+.empty_heart {
+    width: 17px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.btn1 {
+    display: block;
+    width: 80px;
+    height: 36px;
+    padding-right: 5px;
+    background-color: #000;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid #555;
+}
+
+.btn1 > img {
+    margin-top: 2px;
+}
+
+.heart-count {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Gmarket Sans';
+}
+
+.case {
+    width: 160px;
+    height: 36px;
+}
+
+.btn2 {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    background-color: #037b94;
+    color: #fff;
+    border-radius: 4px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.search {
+    background-color: #00000033;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: 23px;
+}
+
+.cell {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 30px;
+    border-left: 1px solid #525050;
+    margin-top: 10px;
+}
+
+.cell1 {
+    border: none;
+}
+
+.cell > a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.cell > a:hover {
+    text-decoration: 1px;
+}
+
+.cell > a > img {
+    margin-bottom: -5px;
+    margin-right: 3px;
+}
+
+.search_bar {
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid #423e3e;
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.search_text {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+
+.search_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    display: block;
+    width: 30px;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* .image-container로 이미지와 오버레이 감싸기 */
+.image-container {
+    position: relative;
+    width: 100%; /* 필요에 따라 크기 조정 */
+    height: auto;
+    overflow: hidden; /* 오버플로우 방지 */
+}
+
+/* 기본 이미지 스타일 */
+.poster-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+/* 이미지 위로 오버레이 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* 기본 투명 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* 기본적으로 숨김 */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* 오버레이 안의 설명 텍스트 */
+.description {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height:25px;
+    padding: 10px;
+    opacity: 0; /* 기본적으로 숨김 */
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.75); /* 어두운 배경 */
+    opacity: 1;
+}
+
+.image-container:hover .description {
+    opacity: 1; /* 설명 텍스트 표시 */
+}
+

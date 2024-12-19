@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+select {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+em {
+  font-style: normal;
+}
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+div {
+  word-break: break-all;
+}
+
+.black {
+  color: #000 !important;
+}
+.blue {
+  color: #40dfd0 !important;
+}
+.blue2 {
+  color: #1e90ff !important;
+}
+.yellow {
+  color: #ffbb38 !important;
+}
+.gray {
+  color: #909090 !important;
+}
+.gray2 {
+  color: #8f9bb3 !important;
+}
+.gray3 {
+  color: #606060 !important;
+}
+.gray4 {
+  color: #bdbdbd !important;
+}
+.red {
+  color: #ff4a4a !important;
+}
+.red2 {
+  color: #fb3b3b !important;
+}
+.green {
+  color: #48bb78 !important;
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  padding: 18px 0;
+}
+
+.tabs1 {
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 0;
+  margin-bottom: 38px;
+}
+.tabs1 a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+  position: relative;
+  padding: 12px 0;
+}
+.tabs1 a.active {
+  font-weight: 700;
+  color: #000;
+}
+.tabs1 a.active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: rgb(54, 36, 98);
+}
+.tabs1.type2 {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.tabs1 {
+  position: relative;
+}
+
+.out {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.out .t1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.out .t2 {
+  font-size: 14px;
+  color: #ff4a4a;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.out .t3 {
+  font-size: 12px;
+  color: #909090;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+.out .t4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.out .t4 p {
+  width: 50%;
+  font-size: 12px;
+  line-height: 18px;
+  color: #606060;
+}
+
+.no-raser {
+  text-align: center;
+  font-size: 18px;
+  color: #8f9bb3;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step .raser-desc1 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.step .raser-desc2 {
+  font-size: 12px;
+  color: #909090;
+  margin-bottom: 28px;
+}
+.step .h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.step .h3 .normal {
+  font-weight: 400;
+}
+.step .discount {
+  padding: 0;
+  border: 0;
+  margin-bottom: 45px;
+}
+
+.description {
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #606060;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.snb {
+  background: #fafafa;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+}
+.snb ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.snb ul li {
+  list-style: none;
+}
+
+.snb ul.m4 {
+  float: right;
+  padding-right: 220px;
+}
+.snb ul.m5 {
+  float: right;
+}
+.snb ul li {
+  float: left;
+}
+.snb ul li a {
+  display: block;
+  line-height: 52px;
+  height: 53px;
+  padding: 0 25px;
+  font-size: 16px;
+  color: #606060;
+}
+.snb ul li a.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.cs-bottom {
+  padding: 27px 35px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.cs-bottom .tel {
+  width: 310px;
+  display: flex;
+  align-items: center;
+}
+.cs-bottom .tel img {
+  margin-right: 24px;
+}
+.cs-bottom .tel dl dt {
+  font-size: 14px;
+}
+.cs-bottom .tel dl dd {
+  font-size: 24px;
+  font-weight: 700;
+  margin: auto;
+}
+.cs-bottom .time {
+  padding-left: 20px;
+  flex: 1;
+  border-left: 1px solid #d8d8d8;
+  font-size: 12px;
+  color: #909090;
+  line-height: 1.6;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/********** 예약 내역 **********/
+.reservation-card {
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 16px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  padding: 8px;
+  vertical-align: middle;
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+.tname {
+  width: 80px;
+  font-family: Arial, sans-serif;
+}
+
+#tname {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.poster {
+  width: 180px; /* 줄어든 간격 설정 */
+  text-align: center;
+}
+
+.poster img {
+  width: 150px;
+  height: 200px;
+  border-radius: 4px;
+}
+.buttons {
+  text-align: right;
+  font-family: Arial, sans-serif;
+}
+.buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttons .cancel {
+  background-color: #d3d3d3;
+  color: black;
+}
+.buttons .pay {
+  background-color: black;
+  color: white;
+}

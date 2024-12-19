@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/org/zerock/controller/AdminController.java=UTF-8
+encoding//src/main/java/org/zerock/domain/KakaopayDTO.java=UTF-8
+encoding//src/main/java/org/zerock/service/EmailReviewService.java=UTF-8
+encoding//src/main/java/org/zerock/service/KakaoPayService.java=UTF-8
+encoding//src/main/webapp/resources/css/reservation.css=UTF-8

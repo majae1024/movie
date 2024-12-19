@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.ReservationMapper">
+	<resultMap type="org.zerock.domain.ReservationVO" id="ReservationMap">
+		<id property="rno" column="rno" />
+		<result property="rno" column="rno" />
+		<result property="user_id" column="user_id" />
+		<result property="user_name" column="user_name" />
+		<result property="movie_id" column="movie_id" />
+		<result property="movie_name" column="movie_name" />
+		<result property="movie_img" column="movie_img" />
+		<result property="seat_info" column="seat_info" />
+		<result property="price" column="price"/>
+		<result property="reser_pay" column="reser_pay"/>
+	</resultMap>
+	
+	
+	<select id="getAlldata" resultMap="ReservationMap">
+    	SELECT * 
+   		FROM reservation
+    	WHERE user_id = #{user_id}
+    	ORDER BY rno DESC
+	</select>
+	
+	
+	<insert id="insert">
+		insert into reservation(rno, user_id, user_name, movie_id, movie_name, movie_img, seat_info, price)
+		values(seq_reser.NEXTVAL, #{user_id}, #{user_name}, #{movie_id}, #{movie_name}, #{movie_img}, #{seat_info}, #{price})
+	</insert>
+	
+	<select id="getOne" resultType="String">
+		select seat_info from reservation where movie_id = #{movie_id}
+	</select>
+	
+	<delete id="delete">
+		delete from reservation where rno = #{rno}
+	</delete>
+	
+	<delete id="Reservationdelete">
+		delete from reservation where user_id = #{user_id}
+	</delete>
+	
+	<select id="countReservation">
+		select count(*) from reservation where rno > 0
+	</select>
+	
+	<select id="membercountReservation">
+		select count(*) from reservation where user_id = #{user_id}
+	</select>
+	
+	<update id="payupdate">
+		update reservation
+		set reser_pay = 1
+		where rno = #{rno}
+		
+	</update>
+	
+	
+	
+</mapper>

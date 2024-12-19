@@ -1,0 +1,724 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '돋움';
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: auto;
+	overflow-y: scroll;
+	letter-spacing: 0;
+	line-height: 1.5;
+	font-size: 15px;
+	color: #444;
+	font-weight: 400;
+}
+
+.body-wrap {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+#sub-section {
+	display: block;
+	position: relative;
+	width: 100%;
+	min-width: 1100px;
+	height: 650px;
+}
+
+#bg {
+	overflow: hidden;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	min-width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#bg::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgba(85, 63, 5, 1) 0%, rgba(23, 17, 1, 0) 50%, rgba(85, 63, 5, 1) 100%);
+}
+
+#bg>img {
+	display: block;
+	width: 100%;
+	filter: blur(15px);
+}
+
+#bg:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	background-color: rgba(3, 1, 21, 0.62);
+}
+
+.z {
+	width: 100%;
+	max-width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	z-index: 5;
+	position: relative;
+	display: block;
+}
+
+.title {
+	width: 800px;
+	padding-top: 195px;
+	font-size: 46px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.title-eng {
+	width: 800px;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 8px;
+}
+
+.sub-desc {
+	width: 500px;
+	color: #888888;
+	line-height: 30px
+}
+
+.btn-util {
+	display: flex;
+	width: 100%;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+.btn-like {
+	display: block;
+	width: 100px;
+	height: 36px;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid #706f72;
+	border-radius: 4px;
+	color: #fff;
+	font-size: .9333em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ico-heart-line {
+	display: inline-block;
+	margin-bottom: -1px;
+	width: 17px;
+	height: 15px;
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-line.png);
+}
+
+#intrstCnt {
+	font-weight: 600;
+}
+
+.sns-share {
+	display: flex;
+	border: 1px solid #706f72;
+	border-radius: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+	font-size: .9333em;
+	width: 100px;
+	height: 36px;
+}
+
+.btn-common-share {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 100px;
+	height: 36px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.ico-sns-line {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 5px;
+	bottom: -2px;
+	position: relative;
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sns-line.png);
+}
+
+.btn-sns-share-wrap {
+	display: none;
+	position: absolute;
+	left: 170px;
+	top: 370px;
+	z-index: 55;
+	width: 360px;
+	height: 80px;
+	margin: 0 0 0 -180px;
+	padding: 20px 0 0 0;
+	border: 1px solid #d8d9db;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: default;
+}
+
+.btn-sns-share-wrap::before {
+	content: '';
+	position: absolute;
+	left: 169px;
+	top: -12px;
+	display: block;
+	width: 22px;
+	height: 12px;
+	background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0;
+}
+
+.on {
+	display: block;
+}
+
+.cont-area {
+	position: relative;
+}
+
+.btnSns {
+	display: inline-block;
+	min-width: 50px;
+	margin: 0 4px;
+	padding: 48px 0 0 0;
+	border: 0;
+	font-size: .9333em;
+	color: #444;
+	line-height: 1.1;
+	background-color: transparent;
+	background-position: center top;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.face {
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-face.png)
+}
+
+.band {
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-band.png)
+}
+
+.twitter {
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-twitter.png)
+}
+
+.link {
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-link.png)
+}
+
+.btn-sns-share-group {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.screen-type2 {
+	width: 100%;
+	height: 24px;
+	margin-top: 10px;
+	display: flex;
+}
+
+.screen-type2>p>img {
+	width: 68px;
+	height: 24px;
+	margin-right: 6px;
+}
+
+.left {
+	margin-left: 5px;
+}
+
+/******************************************************************
+*																  *
+*							수정  								  *		
+*																  *
+*																  *
+*******************************************************************/
+.info {
+	display: flex;
+	width: 435px;
+	height: 65px;
+	margin-top: 70px;
+	color: #fff;
+}
+/******************************************************************
+*																  *
+*							수정 끝								  *		
+*																  *
+*																  *
+*******************************************************************/
+.score {
+	width: 75px;
+	height: 65px;
+	padding-right: 35px;
+}
+
+.tit {
+	font-size: 14px;
+	line-height: 1.1;
+}
+
+.number {
+	padding: 0 0 0 30px;
+	background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-megabox.png) no-repeat 0 center;
+	font-family: Roboto, Dotum, '돋움', sans-serif;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.before {
+	font-size: 2.1333em;
+	color: #59bec9;
+}
+
+.rate {
+	width: 161px;
+	height: 65px;
+}
+
+.cont1 {
+	width: 200px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #ccc;
+	padding: 0 0 0 30px;
+	vertical-align: middle;
+	background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-ticket-gray.png) no-repeat 0 center;
+	margin-top: 10px;
+}
+
+.big {
+	margin: 0 4px 0 0;
+	color: #fff;
+	font-size: 2.1333em;
+	font-family: Roboto, Dotum, '돋움', sans-serif;
+	font-weight: 600;
+}
+
+.audience {
+	width: 100%;
+	height: 65px;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.ico-tooltip-gray {
+	display: inline-block;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	margin-bottom: -2px;
+	background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-tooltip-gray.png);
+}
+
+.cont2 {
+	width: 220px;
+	margin-top: 18px;
+	display: inline-block;
+	padding: 0 0 0 30px;
+	vertical-align: middle;
+	line-height: 1.1;
+	background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-person.png) no-repeat 0 center;
+	margin-top: 18px;
+}
+
+.poster {
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 180px;
+	z-index: 2;
+	width: 260px;
+	height: 374px;
+	border-radius: 8px;
+}
+
+.movie-grade {
+	position: absolute;
+	background-size: 28px 28px;
+	width: 28px;
+	height: 28px;
+	right: 9px;
+	bottom: 9px;
+}
+/***************수정함*************************/
+
+/* 등급별 배경 이미지 설정 */
+.movie-grade.all {
+	background-image: url('https://img.megabox.co.kr/static/pc/images/common/txt/ALL_56x56.png');
+}
+
+.movie-grade.age12 {
+	background-image: url('https://img.megabox.co.kr/static/pc/images/common/txt/12_56x56.png');
+}
+
+.movie-grade.age15 {
+	background-image: url('https://img.megabox.co.kr/static/pc/images/common/txt/15_56x56.png');
+}
+
+.movie-grade.age19 {
+	background-image: url('https://img.megabox.co.kr/static/pc/images/common/txt/19_56x56.png');
+}
+
+.poster>.wrap>img {
+	postion: relative;
+	width: 100%;
+	height: 100%
+}
+/****************수정끝******************/
+.screen-type {
+	overflow: hidden;
+	display: flex;
+	position: absolute;
+	right: 0;
+	bottom: 45px;
+	width: 260px;
+	height: 46px;
+	margin-bottom: -10px;
+	background-color: #59bec9;
+	border-radius: 5px;
+}
+
+.reservation {
+	position: absolute;
+	display: flex;
+	width: 130px;
+	height: 46px;
+	float: left;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.dolby {
+	position: absolute;
+	display: flex;
+	width: 130px;
+	height: 46px;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: #00586a;
+}
+
+.dolby>img {
+	width: 62px;
+	height: 26px;
+}
+
+/*리뷰*/
+.review-container {
+	width: 1000px;
+	min-width: 800px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.review {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	margin-bottom: 16px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+.nickname {
+	width: 80px;
+	text-align: center;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.circle>img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.name {
+	color: rgb(80, 51, 150);
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding-left: 16px;
+}
+
+.rating {
+	font-weight: bold;
+	color: rgb(80, 51, 150);
+	font-size: 25px;
+	padding: 0 30px 0 30px;
+	border-left: 2px solid rgb(177, 177, 177);
+	border-right: 2px solid rgb(177, 177, 177);
+}
+
+.comment {
+	color: black;
+	font-size: 14px;
+	word-wrap: break-word;
+	flex: 1;
+}
+
+.menu-button {
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.menu-button:hover {
+	color: rgb(80, 51, 150);
+}
+
+.menu-button > img {
+   width: 30px;
+   height: 30px;
+}
+
+/* Popup Styling */
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	width: 80%;
+	max-width: 300px;
+	text-align: center;
+	z-index: 1000;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.popup.hidden {
+	display: none;
+}
+
+.popup-content p {
+	margin: 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.popup-content .report-link {
+	font-size: 14px;
+	color: #007BFF;
+	text-decoration: none;
+	background-color: white;
+	border: none;
+	padding: 7px 7px 0 7px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.popup-content .report-link:hover {
+	color: red;
+}
+
+.close-button {
+	font-size: 18px;
+	color: #999;
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+	right: 12px;
+}
+
+.close-button:hover {
+	color: #333;
+}
+
+@media ( max-width : 600px) {
+	.popup {
+		width: 90%;
+	}
+}
+
+/* 팝업 창 기본 스타일 */
+.Modal {
+	display: none; /* 기본적으로 팝업 창은 숨겨짐 */
+	position: fixed;
+	z-index: 1000; /* 팝업 창이 다른 요소들 위에 나타나게 */
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); /* 화면 중앙에 위치 */
+	width: 500px; /* 적당한 너비 */
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left; /* 왼쪽 정렬 */
+	box-sizing: border-box; /* padding 포함 크기 */
+	font-family: Arial, sans-serif; /* 폰트 설정 */
+}
+
+/* 팝업 창 내용 */
+.Modal-content {
+	padding: 20px;
+}
+
+/* 팝업 닫기 버튼 스타일 */
+.close {
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	cursor: pointer;
+}
+
+/* 클릭할 글씨 스타일 */
+.Modal-link {
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+}
+
+.Modal-link:hover {
+	color: #007BFF;
+	font-weight: bold;
+}
+Modal-link > img {
+   width: 15px;
+   height: 15px;
+}
+/* 테이블 스타일 */
+table {
+	width: 100%;
+	margin-top: 15px;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+label.Modal-text {
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+input[type='text'], input[type='number'], textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+	height: 100px;
+}
+
+/* 제출 버튼 스타일 */
+.submit {
+	background-color: #007bff;
+	color: white;
+	font-size: 16px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.submit:hover {
+	background-color: #0056b3;
+}
+
+.sysdate {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	color: #aaa;
+}

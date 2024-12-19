@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.AdminMapper">
+	<resultMap type="org.zerock.domain.UsersVO" id="usersMap">
+		<id property="uno" column="uno" />
+		<result property="uno" column="uno" />
+		<result property="user_id" column="user_id" />
+		<result property="user_pw" column="user_pw" />
+		<result property="user_name" column="user_name" />
+		<result property="birth" column="birth" />
+		<result property="regdate" column="regdate" />
+		<result property="updatedate" column="updatedate" />
+		<result property="role" column="role" />
+	</resultMap>
+
+	<resultMap type="org.zerock.domain.ReviewVO" id="reviewMap">
+		<id property="review_id" column="review_id" />
+		<result property="review_id" column="review_id" />
+		<result property="user_id" column="user_id" />
+		<result property="user_name" column="user_name" />
+		<result property="movie_id" column="movie_id" />
+		<result property="movie_name" column="movie_name" />
+		<result property="review_rating" column="review_rating" />
+		<result property="review_text" column="review_text" />
+		<result property="review_date" column="review_date" />
+		<result property="review_update" column="review_update" />
+		<result property="review_report" column="review_report" />
+	</resultMap>
+
+	<resultMap type="org.zerock.domain.ReservationVO" id="reservationMap">
+		<id property="rno" column="rno" />
+		<result property="rno" column="rno" />
+		<result property="user_id" column="user_id" />
+		<result property="user_name" column="user_name" />
+		<result property="movie_id" column="movie_id" />
+		<result property="movie_name" column="movie_name" />
+		<result property="movie_img" column="movie_img" />
+		<result property="seat_row" column="seat_row" />
+		<result property="seat_num" column="seat_num" />
+		<result property="price" column="price" />
+	</resultMap>
+
+	<sql id="criterial">
+		<trim prefix="(" suffix=") And" prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'I'.toString()">
+							user_id like '%'||#{keyword}||'%'
+						</when>
+						<when test="type == 'N'.toString()">
+							user_name like '%'||#{keyword}||'%'
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<select id="searchTest" resultType="org.zerock.domain.UsersVO">
+		select * from member
+		where
+		<foreach item="val" index="key" collection="map" separator="or" open="(" close=")">
+			<if test="key == 'I'.toString()">
+				user_id like '%'|| #{val}||'%'
+			</if>
+			<if test="key == 'N'.toString()">
+				user_name like '%'|| #{val}||'%'
+			</if>
+		</foreach>
+
+	</select>
+
+	<select id="getListUsers" resultType="org.zerock.domain.UsersVO">
+
+
+	</select>
+
+
+	<!-- ********** User ********** -->
+	<select id="getSearchUsersWithPaging" resultType="org.zerock.domain.UsersVO">
+		<![CDATA[ 
+		select uno, user_id, user_name, birth, regdate,role
+		from ( 
+			select /*+INDEX_DESC(member pk_member) */ 
+			rownum rn, uno, user_id, user_name, birth, regdate, role
+			from member where
+			]]>
+		<include refid="criterial"></include>
+		 <![CDATA[
+		  	role = 'role_0' 
+			and rownum <= #{pageNum} * #{amount}
+			) where rn > (#{pageNum}-1) * #{amount}
+		]]>
+	</select>
+
+
+	<select id="getTotalCount" resultType="int">
+		select count(*) from member where
+		<include refid="criterial"></include>
+		uno > 0
+	</select>
+
+	<select id="getUserInfoByUno">
+		select * from member
+		where uno = #{uno}
+	</select>
+
+
+	<!-- ********** Review ********** -->
+	<sql id="Review_criterial">
+		<trim prefix="(" suffix=") And" prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'I'.toString()">
+							user_name like '%'||#{keyword}||'%'
+						</when>
+						<when test="type == 'N'.toString()">
+							movie_name like '%'||#{keyword}||'%'
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<select id="getSearchReivewsWithPaging" resultType="org.zerock.domain.ReviewVO">
+		<![CDATA[
+		select *
+		from ( 
+			select /*+INDEX_DESC(review pk_review) */ 
+			rownum rn, review_id, user_id, user_name, movie_name, review_date
+			from review where
+			]]>
+		<include refid="Review_criterial"></include>
+		 <![CDATA[
+		  	review_report = 1
+			and rownum <= #{pageNum} * #{amount}
+			) where rn > (#{pageNum}-1) * #{amount}
+		]]>
+	</select>
+
+
+	<select id="getTotalReviewCount" resultType="int">
+		select count(*) from review where
+		<include refid="Review_criterial"></include>
+		review_report = 1
+	</select>
+
+	<select id="getReviewInfoBy">
+		select * from review
+		where review_id = #{review_id}
+	</select>
+
+
+	<!-- ********** Reservation ********** -->
+	<sql id="Reservation_criterial">
+		<trim prefix="(" suffix=") And" prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'I'.toString()">
+							user_name like '%'||#{keyword}||'%'
+						</when>
+						<when test="type == 'N'.toString()">
+							movie_name like '%'||#{keyword}||'%'
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<select id="getSearchReservationWithPaging" resultType="org.zerock.domain.ReservationVO">
+		<![CDATA[
+		select *
+		from ( 
+			select /*+INDEX_DESC(reservation pk_reservation) */ 
+			rownum rn, rno, user_id, user_name, movie_id, movie_name, movie_img, seat_info, price
+			from reservation where
+			]]>
+		<include refid="Reservation_criterial"></include>
+		 <![CDATA[
+		  	rno > 0
+			and rownum <= #{pageNum} * #{amount}
+			) where rn > (#{pageNum}-1) * #{amount}
+		]]>
+	</select>
+
+
+	<select id="getTotalReservationCount" resultType="int">
+		select count(*) from reservation where
+		<include refid="Reservation_criterial"></include>
+		rno > 0
+	</select>
+
+	<select id="getThreeReservation" resultType="org.zerock.domain.ReservationVO">
+		 <![CDATA[
+			    SELECT * FROM (
+			        SELECT /*+INDEX_DESC(reservation pk_reservation)*/
+			               ROWNUM AS rn, rno, user_id, movie_name, seat_info
+			        FROM reservation
+			    )
+			    WHERE rn <= 3
+    		]]>
+	</select>
+
+	<select id="getReservationInfoBy">
+		select * from reservation
+		where rno = #{rno}
+	</select>
+
+
+
+</mapper>

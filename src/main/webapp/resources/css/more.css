@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "돋움";
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: auto;
+	overflow-y: scroll;
+	letter-spacing: 0;
+	line-height: 1.5;
+	font-size: 15px;
+	color: #444;
+	font-weight: 400;
+}
+
+#cont-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	width: 1150px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0 50px 0;
+	padding-top: 200px;
+}
+button {
+    cursor: pointer;
+    letter-spacing: -.5px;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+}
+.list {
+	display: flex; /* Flexbox를 사용 */
+	flex-wrap: wrap; /* 줄바꿈 허용 */
+	width: 1150px;
+}
+
+.poster {
+	width: 245px;
+	height: 450px;
+	margin-left: 35px;
+}
+
+.box1 {
+	width: 100%;
+	height: 352px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 300;
+	font-family: 'Roboto';
+	font-style: italic;
+}
+
+.rank {
+	width: 230px;
+	height: 150px;
+	position: absolute;
+	padding: 10px 0 0 15px;
+	z-index: 2;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.box1>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.box1>img:hover {
+	opacity: 1;
+	color: #000;
+}
+
+.btn-util {
+	width: 100%;
+	height: 36px;
+	position: relative;
+	float: left;
+	display: flex;
+	margin-top: 10px;
+}
+
+.empty_heart {
+	width: 17px;
+	height: 15px;
+	margin-right: 3px;
+}
+
+.btn1 {
+	display: block;
+	width: 80px;
+	height: 36px;
+	padding-right: 5px;
+	background-color: #000;
+	margin-right: 5px;
+	border-radius: 4px;
+	border: 1px solid #555;
+}
+
+.btn1>img {
+	margin-top: 2px;
+}
+
+.heart-count {
+	font-size: 17px;
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Gmarket Sans';
+}
+
+.case {
+	width: 160px;
+	height: 36px;
+}
+
+.btn2 {
+	display: flex;
+	width: 100%;
+	height: 36px;
+	background-color: #037b94;
+	color: #fff;
+	border-radius: 4px;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 15px;
+}
+/* .image-container로 이미지와 오버레이 감싸기 */
+.image-container {
+	position: relative;
+	width: 100%; /* 필요에 따라 크기 조정 */
+	height: auto;
+	overflow: hidden; /* 오버플로우 방지 */
+}
+
+/* 기본 이미지 스타일 */
+.poster-image {
+	display: block;
+	width: 100%;
+	height: 350px;
+	border-radius: 5px;
+}
+
+/* 이미지 위로 오버레이 */
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0); /* 기본 투명 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0; /* 기본적으로 숨김 */
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* 오버레이 안의 설명 텍스트 */
+.description {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px;
+	opacity: 0; /* 기본적으로 숨김 */
+	transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.75); /* 어두운 배경 */
+	opacity: 1;
+}
+
+.image-container:hover .description {
+	opacity: 1; /* 설명 텍스트 표시 */
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.2.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- 데이터베이스 연결을 위한 데이터 소스 설정 -->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<!-- 데이터베이스 드라이버 클래스와 접속 URL 설정 -->
+		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		<property name="jdbcUrl" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE" />
+		<!-- 데이터베이스 접속 계정 정보 설정 -->
+		<property name="username" value="book_ex" />
+		<property name="password" value="1234" />
+	</bean>
+
+	<!-- HikariCP를 사용한 데이터베이스 커넥션 풀을 생성하는 빈 -->
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig" />
+	</bean>
+	<!-- 이메일 서비스 -->
+	<bean id="emailService" class="org.zerock.service.EmailService">
+		<constructor-arg ref="mailSender" />
+	</bean>
+
+	<!-- MyBatis SqlSessionFactoryBean 설정 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- org.zerock.mapper 패키지 내의 MyBatis 매퍼 인터페이스를 자동으로 스캔하는 설정 -->
+	<mybatis-spring:scan base-package="org.zerock.mapper" />
+
+	<!-- Component scan 설정 추가 -->
+	<context:component-scan base-package="org.zerock.service" />
+
+	<!-- 이메일 인증 관련 등록 -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="dlawnsgjs99@gmail.com" />
+		<property name="password" value="jpvv hfam cajq tpbs" />
+		<!-- 보안연결 SSL과 관련된 설정 -->
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+
+</beans>
