@@ -50,71 +50,29 @@
 프로젝트 설계, 구현 PPT
 
 <div align="center">
-    
-| ![이미지1](![슬라이드1](https://github.com/user-attachments/assets/552a99e3-6de4-4d8d-b885-b7a868dbca20)
-) | ![이미지2](![슬라이드2](https://github.com/user-attachments/assets/b900c307-6062-476e-ab54-03291c31b202)
-) |
+
+| ![이미지1](https://github.com/user-attachments/assets/552a99e3-6de4-4d8d-b885-b7a868dbca20) | ![이미지2](https://github.com/user-attachments/assets/b900c307-6062-476e-ab54-03291c31b202) |
 | :----------------------: | :----------------------: |
-| ![이미지3](![슬라이드3](https://github.com/user-attachments/assets/c2bc93f6-55c1-4233-9e1f-74e2f691590b)
-) | ![이미지4](![슬라이드4](https://github.com/user-attachments/assets/756c34a2-d736-4ea0-9d94-65b465be2abe)
-) |
-| ![이미지5](![슬라이드5](https://github.com/user-attachments/assets/0bb9d94e-52c3-4eb2-8227-a78761a613f4)
-) | ![이미지6](![슬라이드6](https://github.com/user-attachments/assets/e05b1d42-5faa-4632-8abf-bcb719f2b013)
-) |
-| ![이미지7](![슬라이드7](https://github.com/user-attachments/assets/4982eced-af2d-47a3-ba44-cb2a09ff9bb2)
-) | ![이미지8](![슬라이드8](https://github.com/user-attachments/assets/889b8aa5-87f1-408c-b39e-f748755e710a)
-) |
-| ![이미지9](![슬라이드9](https://github.com/user-attachments/assets/7c714671-2cd4-4579-bdf7-571a70e63541)
-) | ![이미지10](![슬라이드10](https://github.com/user-attachments/assets/ad98627b-48c2-434a-80bf-7bb5097c7f6e)
-) |
-| ![이미지11](![슬라이드11](https://github.com/user-attachments/assets/1aad1912-b602-473b-afd8-2151f133640d)
-) | ![이미지12](![슬라이드12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d)
-) |
-| ![이미지13](![슬라이드13](https://github.com/user-attachments/assets/b55e1b53-aa10-4689-a3b5-8e10ccb6fb06)
-) | ![이미지14](![슬라이드14](https://github.com/user-attachments/assets/7221ceeb-75e1-4624-a677-89e0efee38fa)
-) |
-| ![이미지15](![슬라이드15](https://github.com/user-attachments/assets/6624219e-af21-4de2-9ca7-923735a40a31)
-) | ![이미지16](![슬라이드16](https://github.com/user-attachments/assets/92efb341-737c-4cef-b8df-59e9677be42f)
-) |
-| ![이미지17](![슬라이드17](https://github.com/user-attachments/assets/ab184ef5-5508-48e6-b4b1-cdad6941c116)
-) | ![이미지18](![슬라이드18](https://github.com/user-attachments/assets/6286c875-fa9b-4eed-9a2c-55ded00b8543)
-) |
-| ![이미지19](![슬라이드19](https://github.com/user-attachments/assets/8ff7cf9c-6154-400b-b39d-fe1a8c6e50e1)
-) | ![이미지20](![슬라이드20](https://github.com/user-attachments/assets/80cb62de-9190-41fb-8e33-83e34311f67c)
-) |
-| ![이미지21](![슬라이드21](https://github.com/user-attachments/assets/286612ee-f33f-4272-acb2-9778a1b18e27)
-) | ![이미지22](![슬라이드22](https://github.com/user-attachments/assets/dd23b104-994b-4d09-93e7-9cd007269f94)
-) |
-| ![이미지23](![슬라이드23](https://github.com/user-attachments/assets/efb5a059-4f71-4b05-a52e-69758a3ed7bf)
-) | ![이미지24](![슬라이드24](https://github.com/user-attachments/assets/0daa22be-bbad-4aff-8bfd-95bd70d23fd6)
-) |
-| ![이미지25](![슬라이드25](https://github.com/user-attachments/assets/60626690-9843-4d46-b698-fd914cbc262d)
-) | ![이미지26](![슬라이드26](https://github.com/user-attachments/assets/66411fc4-94b8-466a-bd7e-1c536bb71820)
-) |
-| ![이미지27](![슬라이드27](https://github.com/user-attachments/assets/0535a0e7-1e95-41fc-8069-5591d828e57e)
-) | ![이미지28](![슬라이드28](https://github.com/user-attachments/assets/5440c898-e2f7-483d-b060-62dffc495fcf)
-) |
-| ![이미지29](![슬라이드29](https://github.com/user-attachments/assets/5ee019ae-90b4-4e23-9024-07ea23d5f8ca)
-) | ![이미지30](![슬라이드30](https://github.com/user-attachments/assets/4d4eb88c-7142-46f5-b51a-e14908e46016)
-) |
-| ![이미지31](![슬라이드31](https://github.com/user-attachments/assets/33dca4c2-33ba-44af-9332-d548277dc8a5)
-) | ![이미지32](![슬라이드32](https://github.com/user-attachments/assets/7d89fb38-ccd9-4fea-8721-c8e8a1308827)
-) |
-| ![이미지33](![슬라이드33](https://github.com/user-attachments/assets/c2f9697d-99b7-4562-b401-81514e319ecc)
-) | ![이미지34](![슬라이드34](https://github.com/user-attachments/assets/7df4bbbe-5bf9-4be6-bfef-53c701c297d9)
-) |
-| ![이미지35](![슬라이드35](https://github.com/user-attachments/assets/330d995d-6b48-4224-81a6-03d310cde84a)
-) | ![이미지36](![슬라이드36](https://github.com/user-attachments/assets/cc95b7f3-c3e8-4105-a299-6f849bc2ba5f)
-) |
-| ![이미지37](![슬라이드37](https://github.com/user-attachments/assets/8d0223a5-bd69-4cd0-951b-76b44724b612)
-) | ![이미지38](![슬라이드38](https://github.com/user-attachments/assets/259722d5-29c9-444b-8bea-95381c295997)
-) |
-| ![이미지39](![슬라이드39](https://github.com/user-attachments/assets/9ee0a08a-6724-4ce1-b589-eb0d59787f1d)
-) | ![이미지40](![슬라이드40](https://github.com/user-attachments/assets/bea44e4d-f8c9-4ee6-b18c-b7a010bbc2d7)
-) |
-| ![이미지41](![슬라이드41](https://github.com/user-attachments/assets/d1102693-8b77-4bec-8bbb-43dbaf819703)
-) | ![이미지42](![슬라이드43](https://github.com/user-attachments/assets/e9ea3fd6-687a-43e3-83ec-0597a040dc4c)
-) |
+| ![이미지3](https://github.com/user-attachments/assets/c2bc93f6-55c1-4233-9e1f-74e2f691590b) | ![이미지4](https://github.com/user-attachments/assets/756c34a2-d736-4ea0-9d94-65b465be2abe) |
+| ![이미지5](https://github.com/user-attachments/assets/0bb9d94e-52c3-4eb2-8227-a78761a613f4) | ![이미지6](https://github.com/user-attachments/assets/e05b1d42-5faa-4632-8abf-bcb719f2b013) |
+| ![이미지7](https://github.com/user-attachments/assets/4982eced-af2d-47a3-ba44-cb2a09ff9bb2) | ![이미지8](https://github.com/user-attachments/assets/889b8aa5-87f1-408c-b39e-f748755e710a) |
+| ![이미지9](https://github.com/user-attachments/assets/7c714671-2cd4-4579-bdf7-571a70e63541) | ![이미지10](https://github.com/user-attachments/assets/ad98627b-48c2-434a-80bf-7bb5097c7f6e) |
+| ![이미지11](https://github.com/user-attachments/assets/1aad1912-b602-473b-afd8-2151f133640d) | ![이미지12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d) |
+| ![이미지13](https://github.com/user-attachments/assets/b55e1b53-aa10-4689-a3b5-8e10ccb6fb06) | ![이미지14](https://github.com/user-attachments/assets/7221ceeb-75e1-4624-a677-89e0efee38fa) |
+| ![이미지15](https://github.com/user-attachments/assets/6624219e-af21-4de2-9ca7-923735a40a31) | ![이미지16](https://github.com/user-attachments/assets/92efb341-737c-4cef-b8df-59e9677be42f) |
+| ![이미지17](https://github.com/user-attachments/assets/ab184ef5-5508-48e6-b4b1-cdad6941c116) | ![이미지18](https://github.com/user-attachments/assets/6286c875-fa9b-4eed-9a2c-55ded00b8543) |
+| ![이미지19](https://github.com/user-attachments/assets/8ff7cf9c-6154-400b-b39d-fe1a8c6e50e1) | ![이미지20](https://github.com/user-attachments/assets/80cb62de-9190-41fb-8e33-83e34311f67c) |
+| ![이미지21](https://github.com/user-attachments/assets/286612ee-f33f-4272-acb2-9778a1b18e27) | ![이미지22](https://github.com/user-attachments/assets/dd23b104-994b-4d09-93e7-9cd007269f94) |
+| ![이미지23](https://github.com/user-attachments/assets/efb5a059-4f71-4b05-a52e-69758a3ed7bf) | ![이미지24](https://github.com/user-attachments/assets/0daa22be-bbad-4aff-8bfd-95bd70d23fd6) |
+| ![이미지25](https://github.com/user-attachments/assets/60626690-9843-4d46-b698-fd914cbc262d) | ![이미지26](https://github.com/user-attachments/assets/66411fc4-94b8-466a-bd7e-1c536bb71820) |
+| ![이미지27](https://github.com/user-attachments/assets/0535a0e7-1e95-41fc-8069-5591d828e57e) | ![이미지28](https://github.com/user-attachments/assets/5440c898-e2f7-483d-b060-62dffc495fcf) |
+| ![이미지29](https://github.com/user-attachments/assets/5ee019ae-90b4-4e23-9024-07ea23d5f8ca) | ![이미지30](https://github.com/user-attachments/assets/4d4eb88c-7142-46f5-b51a-e14908e46016) |
+| ![이미지31](https://github.com/user-attachments/assets/33dca4c2-33ba-44af-9332-d548277dc8a5) | ![이미지32](https://github.com/user-attachments/assets/7d89fb38-ccd9-4fea-8721-c8e8a1308827) |
+| ![이미지33](https://github.com/user-attachments/assets/c2f9697d-99b7-4562-b401-81514e319ecc) | ![이미지34](https://github.com/user-attachments/assets/7df4bbbe-5bf9-4be6-bfef-53c701c297d9) |
+| ![이미지35](https://github.com/user-attachments/assets/330d995d-6b48-4224-81a6-03d310cde84a) | ![이미지36](https://github.com/user-attachments/assets/cc95b7f3-c3e8-4105-a299-6f849bc2ba5f) |
+| ![이미지37](https://github.com/user-attachments/assets/8d0223a5-bd69-4cd0-951b-76b44724b612) | ![이미지38](https://github.com/user-attachments/assets/259722d5-29c9-444b-8bea-95381c295997) |
+| ![이미지39](https://github.com/user-attachments/assets/9ee0a08a-6724-4ce1-b589-eb0d59787f1d) | ![이미지40](https://github.com/user-attachments/assets/bea44e4d-f8c9-4ee6-b18c-b7a010bbc2d7) |
+| ![이미지41](https://github.com/user-attachments/assets/d1102693-8b77-4bec-8bbb-43dbaf819703) | ![이미지42](https://github.com/user-attachments/assets/e9ea3fd6-687a-43e3-83ec-0597a040dc4c) |
 
 </div>
 
