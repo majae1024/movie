@@ -60,8 +60,6 @@
 |![이미지10](https://github.com/user-attachments/assets/ad98627b-48c2-434a-80bf-7bb5097c7f6e) |![이미지11](https://github.com/user-attachments/assets/1aad1912-b602-473b-afd8-2151f133640d) | 
 |![이미지12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d) |![이미지13](https://github.com/user-attachments/assets/b55e1b53-aa10-4689-a3b5-8e10ccb6fb06) | 
 |![이미지14](https://github.com/user-attachments/assets/7221ceeb-75e1-4624-a677-89e0efee38fa) |![이미지15](https://github.com/user-attachments/assets/6624219e-af21-4de2-9ca7-923735a40a31) |
-|![이미지16](https://github.com/user-attachments/assets/a2ba3895-779a-4e58-b051-1734b98abe60) |
-
 </div>
 
 <div align="center">
