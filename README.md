@@ -1,4 +1,4 @@
-# Team Unknown 프로젝트 (팔닭, 8DAK)
+# Team 202Success 프로젝트 (영화 어때)
 
 ---
 
@@ -18,15 +18,18 @@
 
 ## 🚩 개요
 
-이 프로젝트는 팀프로젝트로 협의를 통해 **웹 쇼핑몰**을 개발하는 것으로 웹 쇼핑몰은 사용자가 가장 친숙하게 접근할 수 있으며, 개발자의 입장에서 많은 기능 구현 과제들을 통해 성장할 수 있는 계기가 될 것으로 기대되어 선택하게 되었습니다.
+이 프로젝트는 팀프로젝트로 협의를 통해 **영화 예매사이트**를 개발하는 것으로 웹 쇼핑몰은 사용자가 가장 친숙하게 접근할 수 있으며, 개발자의 입장에서 많은 기능 구현 과제들을 통해 성장할 수 있는 계기가 될 것으로 기대되어 선택하게 되었습니다.
 이 프로젝트는 학습한 웹 개발 기술 HTML, CSS, JavaScript와 Servlet, JSP, 스프링 프레임워크 등을 활용하고, 오라클 데이터베이스를 적용해 동작하는 웹 애플리케이션입니다.
 
-*프로젝트 목표 : 소셜 로그인 및 결제 api를 적용하여 서버와 클라이언트가 별도로 분리된 Spring FrameWork, jsp 쇼핑몰 사이트
+*프로젝트 목표: 소셜 로그인 및 결제 API를 적용하여 서버와 클라이언트가 별도로 분리된 Spring Framework 기반의 JSP 영화 예매 사이트 "영화어때" 개발.
 
-**개발 기간 : 24/04/23 ~ 24/05/30
+웹사이트의 주요 기능은 예매, 리뷰 작성,관리자계층 등을 포함하며, 사용자 친화적 인터페이스를 통해 편리한 영화 예매 경험을 제공하는 것을 목표로 합니다.
+
+**개발 기간 : 24/11/14 ~ 24/12/13
 
 ## 사용한 기술 스택
-- API : Daum 주소 API, 카카오 소셜 API, Portone 결제 API
+- API : 카카오 소셜 API, Kobis API(박스오피스 영화 정보), TMDB API(영화 상세정보), KakaoPay API, OpenWeatherMap API
+
 - 개발 환경 : Java11, Spring Tool Suite3(3.9.17.RELEASE), Visual Studio Code, Apache Tomcat9.0, Windows 10
 - 템플릿 엔진 : JSP
 - 프로그래밍 언어 : Java(11), JavaScript(ES6)
@@ -39,7 +42,7 @@
 - 라이브러리 : Spring-Security(5.4.2), Spring-Web-MVC, MyBatis(3.5.14), Lombok, ojdbc8, HikariCP, Jackson, Gson, AspectJ, Thumbnailator, Json-simple, slf4j, Junit(4.12), Bootstrap
 
 ## **참고**
-웹사이트(랭킹 닭컴(https://www.rankingdak.com/)), 문헌(코드로 배우는 스프링 웹 프로젝트(구멍가게 코딩단, 남가람북스))
+웹사이트(메가 박스([[(https://www.megabox.co.kr/))](https://www.megabox.co.kr/)), 문헌(코드로 배우는 스프링 웹 프로젝트(구멍가게 코딩단, 남가람북스))
 
 - 웹사이트 분석
 1. **디자인 및 레이아웃 분석:**  헤더, 슬라이더, 세션, 푸터로 구성된 레이아웃과 편리하고 익숙한 인터페이스 구조를 갖고 있습니다.
@@ -58,16 +61,17 @@
 | ![이미지7](https://github.com/user-attachments/assets/4982eced-af2d-47a3-ba44-cb2a09ff9bb2) | 
 |![이미지8](https://github.com/user-attachments/assets/889b8aa5-87f1-408c-b39e-f748755e710a) |![이미지9](https://github.com/user-attachments/assets/7c714671-2cd4-4579-bdf7-571a70e63541) | 
 |![이미지10](https://github.com/user-attachments/assets/ad98627b-48c2-434a-80bf-7bb5097c7f6e) |![이미지11](https://github.com/user-attachments/assets/1aad1912-b602-473b-afd8-2151f133640d) | 
-|![이미지12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d) |![이미지13](https://github.com/user-attachments/assets/b55e1b53-aa10-4689-a3b5-8e10ccb6fb06) | 
+|![이미지12](https://github.com/user-attachments/assets/f2d82abc-c5bd-408c-9c35-10b62722098d) |![이미지13](https://github.com/user-attachments/assets/389f1e45-213b-46b5-822c-b1dd6469235f) | 
 |![이미지14](https://github.com/user-attachments/assets/7221ceeb-75e1-4624-a677-89e0efee38fa) |![이미지15](https://github.com/user-attachments/assets/6624219e-af21-4de2-9ca7-923735a40a31) |
 </div>
 
 <div align="center">
-
-<img src="https://github.com/user-attachments/assets/f5a74a24-1a7f-42f8-a5a8-10f49b908657" alt="이미지17" width="1000" height="600"><br>
-<img src="https://github.com/user-attachments/assets/6286c875-fa9b-4eed-9a2c-55ded00b8543" alt="이미지18" width="1000" height="600"><br>
-<img src="https://github.com/user-attachments/assets/8ff7cf9c-6154-400b-b39d-fe1a8c6e50e1" alt="이미지19" width="1000" height="600">
-
+<hr>
+<img src="https://github.com/user-attachments/assets/bbd83ac8-12a3-4a42-9073-2a978256a89c" alt="이미지17" width="1000" height="600"><hr>
+<img src="https://github.com/user-attachments/assets/f3899034-b0e3-4837-83e5-8499e2b1fe29" alt="이미지18" width="1000" height="600"><hr>
+<img src="https://github.com/user-attachments/assets/28c13f97-16e9-40fe-9bb3-2d57822bac03" alt="이미지19" width="1000" height="600"><hr>
+<img src="https://github.com/user-attachments/assets/c34c4aa2-f246-49ea-99f6-b07985351c3c" alt="이미지19" width="1000" height="600"><hr>
+<img src="https://github.com/user-attachments/assets/192af4c6-8df4-468b-ac41-ebe1d24339a7" alt="이미지19" width="1000" height="600"><hr>
 </div>
 
 <div align="center">
