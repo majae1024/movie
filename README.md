@@ -128,8 +128,8 @@
   * **회원가입**
     * (통합) 로그인 페이지의 `카카오 로그인` 버튼을 통해 이동한 회원가입 페이지에서 받아온 이름, 이메일을 이용하여 추가정보 입력 후 일반 회원가입을 진행할 수 있습니다.
 
-    <img src="https://github.com/user-attachments/assets/155952874/c3c0f2b9-7262-4f8f-be58-df0e45e2f5ad" alt="회원가입" width="650" height="400">
-
+    <img src="https://github.com/user-attachments/assets/15809829-e6e8-4b7b-a582-eeabb10c531e" alt="회원가입" width="650" height="400">
+ <img src="https://github.com/user-attachments/assets/9aaafc45-27df-4adb-836e-9637486c27d6" alt="회원가입" width="650" height="400">
   * **메인화면**
     * 메인 화면에서는 다음과 같은 정보를 조회할 수 있습니다:
       - 인기 상영작
@@ -141,7 +141,7 @@
   * **더 많은 영화**
     * `더 많은 영화`에서는 메인페이지에 표시된 영화를 포함한 나머지 영화를 표시합니다.
 
-    <img src="https://github.com/user-attachments/assets/6273b1d0-0f3b-4661-ab3d-68145ec72725" alt="더 많은 영화" width="650" height="400">
+    <img src="https://github.com/user-attachments/assets/f0745a93-aba6-43bb-8e65-14a669581d1d" alt="더 많은 영화" width="650" height="400">
 
       
 
@@ -150,40 +150,40 @@
 
       - 만약 해당 등급나이를 충족하지 못한다면 이전페이지로 돌려보냅니다.
 
-      <img src="" alt="연령 등급" width="650" height="400">
+      <img src="" alt="연령 등급" width="650" height="400"><br>
       
       - 리뷰작성.
       
-      <img src="" alt="작성" width="650" height="400">
+      <img src="" alt="작성" width="650" height="400"><br>
 
-       - 해당 리뷰는 댓글작성자만 수정, 삭제 할 수 있고, 나머지 댓글에 대해서는 신고할 수 있습니다.
+      - 해당 리뷰는 댓글작성자만 수정, 삭제 할 수 있고, 나머지 댓글에 대해서는 신고할 수 있습니다.
       
-       <img src="" alt="작성 신고" width="650" height="400">
-
+       <img src="" alt="작성 신고" width="650" height="400"><br>
+      - 중복 신고
+        <img src="" alt="중복신고" width="650" height="400"><br>
       - 수정 / 삭제
       
-       <img src="" alt="수정 삭제" width="650" height="400">
+       <img src="" alt="수정 삭제" width="650" height="400"><br>
 
     * **예매페이지**
       * `예매` 페이지에서는 차량 크기에따른 열 선택제한, 이미 예약한 좌석 예매불가, 좌석 및 가격 표시, 리셋 버튼을 통해 처음부터 입력하기 편하게 사용자 친화적 경험을 제공합니다.
-
+       - 예매하
       <img src="" alt="예매" width="650" height="400">
     
       
     * **마이페이지**
       * `마이페이지`에서는 예매내역 확인, 결제, 예매취소를 할 수 있습니다.
         - 결제
-       <img src="" alt="카카오결제" width="650" height="400">
+       <img src="" alt="카카오결제" width="650" height="400"><br>
         - 예매취소
-
-     <img src="" alt="예매취소" width="650" height="400">
+     <img src="" alt="예매취소" width="650" height="400"><br>
       
       
     * **관리자**
    
-      * `관리자대쉬보드`에서는 유저 총 수, 신고리뷰 총 수, 공지 총 수를 확인할 수 있습니다.
+      * `관리자대쉬보드`에서는 (유저 총 수, 신고리뷰 총 수, 공지 총 수, 상영스케쥴, 날씨)를 확인할 수 있습니다. 
         <img src="" alt="유저관리" width="650" height="400">
-      * `관리자` 페이지에서는 유저관리, 신고리뷰목록, 예매목록, 공지사항목록을 확인할 수 있습니다.
+      * `관리자대쉬보드`에서는 유저관리, 신고리뷰목록, 예매목록, 공지사항목록을 확인할 수 있습니다.
 
         * 유저관리에서는 삭제 시 유저의 댓글, 예매내역을 같이 삭제할 수 있습니다.
         <img src="" alt="유저관리" width="650" height="400">
@@ -191,24 +191,22 @@
         * 신고리뷰목록에서는 신고된 리뷰를 삭제하면 해당 유저의 이메일로 삭제를 알립니다.
           
           - 삭제하기
-        <img src="" alt="신고리뷰삭제" width="650" height="400"> 
+        <img src="" alt="신고리뷰삭제" width="650" height="400"><br> 
             
           - 이메일 확인
-        <img src="" alt="신고리뷰이메일" width="650" height="400">
+        <img src="" alt="신고리뷰이메일" width="650" height="400"><br>
 
         * 공지목록에서는 공지를 작성하고 수정을 통하여 메인페이지에 공지 유무를 결정합니다.
           
           - 작성
-        <img src="" alt="공지작성" width="650" height="400">
-          - 수정
-        <img src="" alt="공지수정" width="650" height="400">
-          - 공지
-        <img src="" alt="공지확인" width="650" height="400">
-
+        <img src="https://github.com/user-attachments/assets/9105b6b0-709c-4a03-8883-af46807b3f56" alt="공지작성" width="650" height="400"><br>
+          - 수정, 공지팝업
+        <img src="" alt="공지수정" width="650" height="400"><br>
+       
         * 예매목록은 전체 영화의 예매내역을 확인할 수 있습니다.
         <img src="" alt="예매내역확인" width="650" height="400">
           
-        * 목록에서는 10개씩 페이징처리, 검색을 이용하여 찾을 수 있습니다.
+        * 목록에서는 10개씩 페이징처리, 검색필터을 이용하여 찾을 수 있습니다.
         <img src="" alt="예매내역확인" width="650" height="400">
  
   
