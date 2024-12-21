@@ -1,4 +1,4 @@
-# Team 202Success 프로젝트 (영화 어때-자동차극장) (@자동차 이모티콘@),(@영화필름 이모티콘@)
+# 🚗 Team 202Success 프로젝트 ( 영화 어때-자동차극장) 🎥
 
 
 ## 목차
@@ -26,7 +26,7 @@
 
 **개발 기간 : 24/11/14 ~ 24/12/13
 
-## 사용한 기술 스택
+## 💻 사용한 기술 스택
 - API : 카카오 소셜 API, Kobis API(박스오피스 영화 정보), TMDB API(영화 상세정보), KakaoPay API, OpenWeatherMap API, JavaMail API
 
 - 개발 환경 : Java11, Spring Tool Suite3(3.9.17.RELEASE), Visual Studio Code, Apache Tomcat9.0, Windows 10
@@ -87,7 +87,7 @@
 
 </div>
 
-## 💻 핵심 기능
+## 🎯 핵심 기능
 
 #### 영화 예매
 - 박스오피스 정보(kobis API)와 해당 영화 이름을 비교하여 영화 상세정보(TMDB API)를 결합
@@ -113,7 +113,7 @@
 - 예약목록(페이징처리, 필터링(영화이름, 아이디, 영화이름 or 아이디), 삭제)
 
 
-## 🎇 주요기능 실행화면
+## 🎬 주요기능 실행화면
 주요기능 실행화면
 
  * **메인 페이지**
@@ -144,75 +144,75 @@
 
       
 
-    * **상세페이지**
+* **상세페이지**
    
-      * `상세페이지`에서는 메인에서는 얻을 수 없었던 영화정보를 보여주며 누적시청자, 평점, 리뷰등을 확인할 수 있습니다.
+  * `상세페이지`에서는 메인에서는 얻을 수 없었던 영화정보를 보여주며 누적시청자, 평점, 리뷰등을 확인할 수 있습니다.
         
  <img src="https://github.com/user-attachments/assets/839ec5bf-0983-44b3-9fae-52e8fcd06ed0" alt="연령 등급" width="650" height="400"><br>
  
-         - 만약 해당 등급나이를 충족하지 못한다면 이전페이지로 돌려보냅니다.
+   - 만약 해당 등급나이를 충족하지 못한다면 이전페이지로 돌려보냅니다.
       <img src="https://github.com/user-attachments/assets/448d88dc-880a-4ba8-bc6c-9f0cf611ef4f" alt="연령 등급" width="650" height="400"><br>
       
-        - 리뷰작성.
+   - 리뷰작성.
       <img src="https://github.com/user-attachments/assets/579f2481-87ce-464c-bc4c-46e54032c2d8" alt="작성" width="650" height="400"><br>
 
-        - 해당 리뷰는 댓글작성자만 수정, 삭제 할 수 있고, 나머지 댓글에 대해서는 신고할 수 있습니다.
+   - 해당 리뷰는 댓글작성자만 수정, 삭제 할 수 있고, 나머지 댓글에 대해서는 신고할 수 있습니다.
       <img src="https://github.com/user-attachments/assets/76c792b4-7da8-4873-b334-78bd212c82d1" alt="작성 신고" width="650" height="400"><br>
       
-        - 중복 신고
+   - 중복 신고
         <img src="https://github.com/user-attachments/assets/766c5ebc-9aae-4351-98fe-dd19d81957c5" alt="중복신고" width="650" height="400"><br>
         
-        - 수정 / 삭제
+   - 수정 / 삭제
        <img src="https://github.com/user-attachments/assets/258b8252-7813-4fdc-ae80-991bfe42bdae" alt="수정 삭제" width="650" height="400"><br>
 
-    * **예매페이지**
-      * `예매` 페이지에서는 차량 크기에따른 열 선택제한, 이미 예약한 좌석 예매불가, 좌석 및 가격 표시, 리셋 버튼을 통해 처음부터 입력하기 편하게 사용자 친화적 경험을 제공합니다.
-       - 예매하기
+  * **예매페이지**
+    * `예매` 페이지에서는 차량 크기에따른 열 선택제한, 이미 예약한 좌석 예매불가, 좌석 및 가격 표시, 리셋 버튼을 통해 처음부터 입력하기 편하게 사용자 친화적 경험을 제공합니다.
+      - 예매하기
       <img src="https://github.com/user-attachments/assets/986db857-7c23-4a3c-ab95-49f357c9ef79" alt="예매" width="650" height="400">
     
       
-    * **마이페이지**
-      * `마이페이지`에서는 예매내역 확인, 결제, 예매취소를 할 수 있습니다.
-        - 결제
+  * **마이페이지**
+    * `마이페이지`에서는 예매내역 확인, 결제, 예매취소를 할 수 있습니다.
+      - 결제
        <img src="https://github.com/user-attachments/assets/944b1a88-489c-4392-a107-82d77ae4bd8f" alt="카카오결제" width="650" height="400"><br>
-        - 예매취소
+      - 예매취소
      <img src="https://github.com/user-attachments/assets/5e669fd9-a8fd-4f60-94e9-a1769b4d117d" alt="예매취소" width="650" height="400"><br>
       
       
-    * **관리자**
+* **관리자**
    
-      * `관리자대쉬보드`에서는 (유저 총 수, 신고리뷰 총 수, 공지 총 수, 상영스케쥴, 날씨)를 확인할 수 있습니다. 
+  * `관리자대쉬보드`에서는 (유저 총 수, 신고리뷰 총 수, 공지 총 수, 상영스케쥴, 날씨)를 확인할 수 있습니다. 
         <img src="https://github.com/user-attachments/assets/64c27c10-4295-4f2e-990b-a1bd3ef0a661" alt="유저관리" width="650" height="400">
 
-        * 유저관리에서는 삭제 시 유저의 댓글, 예매내역을 같이 삭제할 수 있습니다.
+  * 유저관리에서는 삭제 시 유저의 댓글, 예매내역을 같이 삭제할 수 있습니다.
         <img src="https://github.com/user-attachments/assets/e9f47100-9a90-4c9a-9780-3643395483b5" alt="유저관리" width="650" height="400">
 
-        * 신고리뷰목록에서는 신고된 리뷰를 삭제하면 해당 유저의 이메일로 삭제를 알립니다.
+  * 신고리뷰목록에서는 신고된 리뷰를 삭제하면 해당 유저의 이메일로 삭제를 알립니다.
           
-          - 삭제하기
+    - 삭제하기
         <img src="https://github.com/user-attachments/assets/1f39db14-f833-4598-83c7-ddb35cb71b3f" alt="신고리뷰삭제" width="650" height="400"><br> 
             
-          - 이메일 확인
+    - 이메일 확인
         <img src="https://github.com/user-attachments/assets/94e1e053-e0b7-4c4b-8ba1-33253f3e058e" alt="신고리뷰이메일" width="650" height="400"><br>
 
-        * 공지목록에서는 공지를 작성하고 수정을 통하여 메인페이지에 공지 유무를 결정합니다.
+  * 공지목록에서는 공지를 작성하고 수정을 통하여 메인페이지에 공지 유무를 결정합니다.
           
-          - 작성
+    - 작성
         <img src="https://github.com/user-attachments/assets/0fdd3e58-667c-4f4a-8753-9a660885db39" alt="공지작성" width="650" height="400"><br>
-          - 수정, 공지팝업
+    - 수정, 공지팝업
         <img src="https://github.com/user-attachments/assets/500eb97c-a78d-4075-94ce-53da228dbee2" alt="공지수정" width="650" height="400"><br>
        
-        * 예매목록은 전체 영화의 예매내역을 확인할 수 있습니다.
+    * 예매목록은 전체 영화의 예매내역을 확인할 수 있습니다.
         <img src="https://github.com/user-attachments/assets/d0e3edda-94eb-4502-a9ac-c81394e6adf6" alt="예매내역확인" width="650" height="400">
           
-        * 목록에서는 10개씩 페이징처리, 검색필터을 이용하여 찾을 수 있습니다.
+    * 목록에서는 10개씩 페이징처리, 검색필터을 이용하여 찾을 수 있습니다.
         <img src="https://github.com/user-attachments/assets/8c786f5c-f09e-42a9-bb9c-9e32e20466f9" alt="예매내역확인" width="650" height="400">
  
   
 
 ## 🌄 개선사항
-- 로그인 회원에 대한 세션 관리 및 로그인 여부에 대한 유효성 검사
+
 - 미구현 기능에 대한 구현
-- 각 로직을 병합한 메인 페이지에 대한 가시성, 코드의 재사용성
-- 디렉토리 구조 개선
-- 계산 알고리즘 보완
+   (예매티켓 영화제목 클릭 시 영화예매페이지 이동, 관리자페이지 영화상영계획표, 결제시 결제완료 표)
+- 리뷰의 대댓글 기능, 리뷰 신고 시 신고사유 입력
+- 로그인 (id찾기, pw찾기)기능
