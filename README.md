@@ -1,16 +1,5 @@
 # Team 202Success 프로젝트 (영화 어때-자동차극장) (@자동차 이모티콘@),(@영화필름 이모티콘@)
-![Admin Login](adminlogin.gif)
-![Certification](certification.gif)
-![Email](email.gif)
-![ID Delete](iddelete.gif)
-![Notice Modify Pop](notice_modify_pop.gif)
-![Notice Write](noticewrite.gif)
-![Register](register.gif)
-![Reservate](reservate.gif)
-![Reservate List](reservatelist.gif)
-![Reserve Cancel](reservecancel.gif)
-![Review Write](reviewwrite.gif)
----
+
 
 ## 목차
   
@@ -133,13 +122,13 @@
     * 메인 페이지 우측 상단 네비게이션 메뉴를 통해 `로그인` 페이지에 접근이 가능합니다.
       - 로그인하지 않은 유저는 예매, 더 많은 영화, 마이페이지로 접근할 수 없습니다.
 
-    <img src="https://github.com/user-attachments/assets/6273b1d0-0f3b-4661-ab3d-68145ec72725" alt="로그인" width="650" height="400">
+    <img src="https://github.com/user-attachments/assets/fa0eeefc-d493-408f-89b7-9b8096ee294b" alt="메인인" width="650" height="400"><br>
 
   * **회원가입**
     * (통합) 로그인 페이지의 `카카오 로그인` 버튼을 통해 이동한 회원가입 페이지에서 받아온 이름, 이메일을 이용하여 추가정보 입력 후 일반 회원가입을 진행할 수 있습니다.
 
-    <img src="https://github.com/user-attachments/assets/15809829-e6e8-4b7b-a582-eeabb10c531e" alt="회원가입" width="650" height="400">
- <img src="https://github.com/user-attachments/assets/9aaafc45-27df-4adb-836e-9637486c27d6" alt="회원가입" width="650" height="400">
+    <img src="https://github.com/user-attachments/assets/15809829-e6e8-4b7b-a582-eeabb10c531e" alt="회원가입" width="650" height="400"><br>
+ <img src="https://github.com/user-attachments/assets/9aaafc45-27df-4adb-836e-9637486c27d6" alt="회원가입" width="650" height="400"><br>
   * **메인화면**
     * 메인 화면에서는 다음과 같은 정보를 조회할 수 있습니다:
       - 인기 상영작
@@ -156,37 +145,38 @@
       
 
     * **상세페이지**
+   
       * `상세페이지`에서는 메인에서는 얻을 수 없었던 영화정보를 보여주며 누적시청자, 평점, 리뷰등을 확인할 수 있습니다.
-
+        
+ <img src="https://github.com/user-attachments/assets/839ec5bf-0983-44b3-9fae-52e8fcd06ed0" alt="연령 등급" width="650" height="400"><br>
+ 
       - 만약 해당 등급나이를 충족하지 못한다면 이전페이지로 돌려보냅니다.
-
-      <img src="" alt="연령 등급" width="650" height="400"><br>
+      <img src="https://github.com/user-attachments/assets/448d88dc-880a-4ba8-bc6c-9f0cf611ef4f" alt="연령 등급" width="650" height="400"><br>
       
       - 리뷰작성.
-      
-      <img src="" alt="작성" width="650" height="400"><br>
+      <img src="https://github.com/user-attachments/assets/579f2481-87ce-464c-bc4c-46e54032c2d8" alt="작성" width="650" height="400"><br>
 
       - 해당 리뷰는 댓글작성자만 수정, 삭제 할 수 있고, 나머지 댓글에 대해서는 신고할 수 있습니다.
+      <img src="https://github.com/user-attachments/assets/76c792b4-7da8-4873-b334-78bd212c82d1" alt="작성 신고" width="650" height="400"><br>
       
-       <img src="" alt="작성 신고" width="650" height="400"><br>
       - 중복 신고
-        <img src="" alt="중복신고" width="650" height="400"><br>
+        <img src="https://github.com/user-attachments/assets/766c5ebc-9aae-4351-98fe-dd19d81957c5" alt="중복신고" width="650" height="400"><br>
+        
       - 수정 / 삭제
-      
-       <img src="" alt="수정 삭제" width="650" height="400"><br>
+       <img src="https://github.com/user-attachments/assets/258b8252-7813-4fdc-ae80-991bfe42bdae" alt="수정 삭제" width="650" height="400"><br>
 
     * **예매페이지**
       * `예매` 페이지에서는 차량 크기에따른 열 선택제한, 이미 예약한 좌석 예매불가, 좌석 및 가격 표시, 리셋 버튼을 통해 처음부터 입력하기 편하게 사용자 친화적 경험을 제공합니다.
-       - 예매하
-      <img src="" alt="예매" width="650" height="400">
+       - 예매하기
+      <img src="https://github.com/user-attachments/assets/986db857-7c23-4a3c-ab95-49f357c9ef79" alt="예매" width="650" height="400">
     
       
     * **마이페이지**
       * `마이페이지`에서는 예매내역 확인, 결제, 예매취소를 할 수 있습니다.
         - 결제
-       <img src="" alt="카카오결제" width="650" height="400"><br>
+       <img src="https://github.com/user-attachments/assets/944b1a88-489c-4392-a107-82d77ae4bd8f" alt="카카오결제" width="650" height="400"><br>
         - 예매취소
-     <img src="" alt="예매취소" width="650" height="400"><br>
+     <img src="https://github.com/user-attachments/assets/5e669fd9-a8fd-4f60-94e9-a1769b4d117d" alt="예매취소" width="650" height="400"><br>
       
       
     * **관리자**
