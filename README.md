@@ -37,7 +37,6 @@
 - 데이터베이스: Oracle(11.2.0.2.0)
 - 타겟 : Web Browser
 - 버전 관리 : Git
-- 문서 관리 : Notion
 - 라이브러리 : Spring-Security(5.4.2), Spring-Web-MVC, MyBatis(3.5.14), Lombok, ojdbc8, HikariCP, Jackson, Gson, AspectJ, Thumbnailator, Json-simple, slf4j, Junit(4.12), Bootstrap
 
 ## **참고**
