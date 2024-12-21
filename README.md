@@ -1,5 +1,15 @@
 # Team 202Success 프로젝트 (영화 어때-자동차극장) (@자동차 이모티콘@),(@영화필름 이모티콘@)
-
+![Admin Login](adminlogin.gif)
+![Certification](certification.gif)
+![Email](email.gif)
+![ID Delete](iddelete.gif)
+![Notice Modify Pop](notice_modify_pop.gif)
+![Notice Write](noticewrite.gif)
+![Register](register.gif)
+![Reservate](reservate.gif)
+![Reservate List](reservatelist.gif)
+![Reserve Cancel](reservecancel.gif)
+![Review Write](reviewwrite.gif)
 ---
 
 ## 목차
